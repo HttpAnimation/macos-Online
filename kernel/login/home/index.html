@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" oncontextmenu="return false">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MacOS</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://use.fontawesome.com/c1fc52643a.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://html-css-js.com/modules/jquery-ui/jquery-ui.min.css"/>
+    <script src="https://html-css-js.com/modules/jquery-ui/jquery-ui.min.js"></script>
+    <link rel="icon" href="assets/FinderIcon.png">
+    <script>
+        $(function() {
+            $('.jquery-draggable').draggable();
+        });
+
+        $(function() {
+            $('.jquery-resizable').resizable();
+        });
+
+        
+    </script>
+</head>
+<body onload="Time(); addFinderVersion();" style="background: url('background.6k.jpg'); background-size: cover;">
+    <div class="top-menu">
+        <button class="top-menu-button"><i class="fa fa-apple"></i></button>
+        <button onclick="toggleFileContext()" class="top-menu-button top-file">File</button>
+        <button class="top-menu-button top-edit">Edit</button>
+        <button class="top-menu-button top-view">View</button>
+        <button class="top-menu-button top-special">Special</button>
+        <div class="special-items">
+            <i class="fa fa-wifi wifi"></i>
+            <i class="fa fa-battery-full battery"></i>
+            <element>Time: <span id="digital-clock"></span></element>
+        </div>
+    </div>
+    <div class="table-taskmanager">
+        <img class="table-icon" src="assets/FinderIcon.png">
+        <img class="table-icon" src="assets/launchPad.png">
+        <img class="table-icon" src="assets/expose.png">
+        <img class="table-icon" src="assets/appstore.png">
+        <img class="table-icon" src="assets/Safari.png">
+        <img class="table-icon" src="assets/ichat.png">
+        <img class="table-icon" src="assets/facetime.png">
+        <img class="table-icon" src="assets/address.png">
+        <img class="table-icon" src="assets/preview.png">
+        <img class="table-icon" src="assets/iTunes.png">
+        <img class="table-icon" src="assets/preferences.png">
+        <img class="table-icon" src="assets/trash.png">
+    </div>
+    <div id="file-context" class="file-context">
+        <div onclick="development_running_top()" class="context-menu-item">New</div>
+        <div onclick="development_running_top()" class="context-menu-item">Open</div>
+        <div onclick="toggleFinderVersionTopBar()" class="context-menu-item">About Finder</div>
+    </div>
+
+    <div id="finder-version-window" class="finder-version-window jquery-draggable jquery-resizable">
+        <div class="window-head">
+            <div class="window-close" onclick="toggleFinderVersion()"></div>
+            <element class="window-title">About Finder</element>
+        </div>
+        <div class="window-body">
+            <img class="finder-icon-on-window" src="assets/FinderIcon.png" width="100px">
+            <element class="finder-version-on-window">Finder Version : <span id="finder-version"></span></element>
+        </div>
+    </div>
+
+    <div class="jquery-draggable" id="alert-dev-run">
+        <div class="dev-window-head">
+            <div class="dev-window-close" onclick="development_running()"></div>
+            <element class="dev-window-title">Development running!</element>
+        </div>
+        <div class="dev-window-body">
+            <img class="alert-dev" src="assets/Alert.png" width="40px">
+            <h2 class="alert-dev-alertment">Alert!</h2>
+            <element class="dev-running-text">Development is still running in this version</element>
+            <button onclick="development_running()" class="apple-button dev-close">OK</button>
+        </div>
+    </div>
+
+</body>
+</html>

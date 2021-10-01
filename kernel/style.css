@@ -1,0 +1,28 @@
+body {
+    background-color: black;
+}
+
+
+.window {
+    width: 300px;
+    height: 100px;
+    background-color: rgb(208, 173, 144);
+}
+
+.window-title {
+    position: absolute;
+    width: 300px;
+    height: 20px;
+    background-color: blue;
+    color: white;
+    font-family: arial;
+    text-align: center;
+}
+
+.window-body {
+    position: absolute;
+    top: 50px;
+    text-align: center;
+    width: 300px;
+    font-family: arial;
+}

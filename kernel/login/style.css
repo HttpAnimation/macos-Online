@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 97.6vh;
+}
+
+.logonui {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-color: black;
+    color: white;
+    font-family: arial;
+    opacity: 80%;
+    border-radius: 30px;
+}
+
+.logonui-blur {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    filter: blur(8px);
+    border-radius: 30px;
+}
+
+.logonui-body {
+    position: absolute;
+    top: 20%;
+    left: 200px;
+}
+
+.pwdInput {
+    position: absolute;
+    left: 30%;
+    top: 60%;
+}
+
+.submit {
+    position: absolute;
+    left: 65%;
+    top: 60%;
+}

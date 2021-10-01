@@ -1,0 +1,259 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 97.6vh;
+}
+
+.table-taskmanager {
+    position: absolute;
+    width: 50%;
+    height: 9.6%;
+    background-color: rgb(180, 180, 255);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border: 1px solid black;
+    top: 90.1%;
+    text-align: center;
+}
+
+.table-icon {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    top: 10px;
+}
+
+.table-icon:hover {
+    background-color: rgb(139, 139, 197);
+}
+
+.top-menu {
+    position: absolute;
+    width: 100%;
+    height: 25px;
+    background-color: rgb(202, 202, 202);
+    top: 0;
+    left: 0;
+}
+
+.top-menu-button {
+    position: absolute;
+    font-size: 1em;
+    margin: none;
+    border: 2px solid blue;
+}
+
+.top-menu-button:hover {
+    background-color: lightblue;
+}
+
+.top-file {
+    left: 28px;
+}
+
+.top-edit {
+    left: 69px;
+}
+
+.top-view {
+    left: 112px;
+}
+
+.top-special {
+    left: 162px;
+}
+
+.special-items {
+    position: absolute;
+    top: 5px;
+    left: 85%;
+}
+
+element {
+    font-family: arial;
+}
+
+.file-context {
+    position: absolute;
+    top: 25px;
+    left: 28px;
+    width: 120px;
+    height: 100px;
+    background: #ffffff;
+    text-align: center;
+    transform: scale(0);
+    transition: transform 300ms ease-in-out;
+    transform-origin: top left;
+}
+
+.context-menu-item {
+    text-decoration: none;
+    font-family: arial;
+    color: black;
+    cursor: default;
+}
+
+.context-menu-item:hover {
+    background-color: blue;
+    color: white;
+}
+
+.file-context.active {
+    transform: scale(1);
+}
+
+.finder-version-window {
+    width: 300px;
+    height: 300px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    border: 2px solid black;
+    text-align: center;
+    transform: scale(0);
+    transition: transform 300ms ease-in-out;
+    transform-origin: left;
+}
+
+.window-head {
+    width: 100%;
+    height: 30px;
+    background-color: rgb(189, 189, 189);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 2px solid black;
+    text-align: center;
+}
+
+.window-close {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(202, 0, 0);
+    border-radius: 50%;
+    margin-left: 5px;
+    top: 5px;
+    opacity: 50%;
+}
+
+.window-close:hover {
+    opacity: 100%;
+}
+
+.window-title {
+    position: absolute;
+    left: 35%;
+    top: 6px;
+    cursor: default;
+}
+
+.window-body {
+    text-align: center;
+}
+
+.finder-icon-on-window {
+    position: relative;
+    top: 10px;
+}
+
+.finder-version-on-window {
+    position: absolute;
+    top: 200px;
+    left: 28%;
+}
+
+.finder-version-window.active {
+    transform: scale(1);
+}
+
+#alert-dev-run {
+    position: relative;
+    width: 500px;
+    height: 90px;
+    background-color: black;
+    border-radius: 10px;
+    border: 2ox solid black;
+    transform: scale(0);
+    transition: transform 300ms ease-in-out;
+}
+
+.dev-window-head {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background-color: rgb(189, 189, 189);
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 2px solid black;
+}
+
+.dev-window-close {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(202, 0, 0);
+    border-radius: 50%;
+    margin-left: 5px;
+    top: 5px;
+    opacity: 50%;
+}
+
+.dev-window-close:hover {
+    opacity: 100%;
+}
+
+.dev-window-title {
+    position: absolute;
+    top: 5px;
+    left: 31%;
+    cursor: default;
+}
+
+.alert-dev {
+    position: relative;
+    margin: 10px;
+}
+
+.alert-dev-alertment {
+    position: absolute;
+    top: 25px;
+    left: 55px;
+    font-family: arial;
+    font-weight: lighter;
+}
+
+.dev-window-body {
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 2px solid black;
+}
+
+.dev-running-text {
+    position: absolute;
+    top: 70px;
+    left: 56px;
+}
+
+.apple-button {
+    border-radius: 5px;
+    border: 2px solid blue;
+    border-top: 2px solid lightblue;
+    border-right: 2px solid lightblue;
+    background-color: rgb(48, 85, 140);
+    color: white;
+}
+
+.dev-close {
+    position: absolute;
+    top: 90px;
+    left: 450px;
+}
+
+#alert-dev-run.active {
+    transform: scale(1);
+}
